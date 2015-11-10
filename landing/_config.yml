@@ -1,0 +1,12 @@
+# Site settings
+title: New InfoLis Landing Page
+email: your-email@domain.com
+description: "This is the draft for a new landing page for infolis.github.io."
+baseurl: ""
+url: "http://letschm-github.io"
+twitter_username: jekyllrb
+github_username:  letschm
+
+# Build settings
+markdown: kramdown
+permalink: pretty
