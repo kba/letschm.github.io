@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "InFoLiS presentation at ELAG 2015"
-date:   2015-03-23 15:55:00
+date:   2015-11-11 19:40:00
 categories: infolis conference
 ---
 
