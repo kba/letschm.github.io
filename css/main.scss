@@ -16,3 +16,18 @@
 // Partials
 @import 'includes/header';
 @import 'includes/footer';
+
+#kacheln-container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#kacheln-container > div {
+  width: 200px;
+  height: 200px;
+  background: green;
+  margin-right: 2em;
+  float: left;
+}
+
