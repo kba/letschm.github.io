@@ -29,22 +29,69 @@ position: relative;
 background-color: #fff //#ffba6f
 }
 
-.tool > div {
-  width:  20%;
+
+.goal {
+background: #96e089;
+width: 50%;
+height: 100%;
+display: inline-block;
+}
+
+.sep {
+background: #2277b0;
+display: inline-block;
+width: 100%;
+}
+
+.tool_left {
+  width:  30%;
   height: auto;
-  background: #f0f0f0;
+  background: rgba(150,224,137,0.4);
   //margin-right: 2%;
-  margin-left: 4%;
+  margin-left: 3%;
   margin-top: 1em;
   margin-bottom: 1em;
   padding: 1em;
   display: inline-block;
 	float: left;
-	box-shadow: 5px 5px 5px 5px;
+	//box-shadow: 5px 5px 5px 5px;
 //border-radius: 2em;
-
 }
-
+.tool_center {
+  width:  30%;
+  height: auto;
+  background: rgba(34,119,240,0.4);
+  //margin-right: 2%;
+  margin-left: 2%; 
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  display: inline-block;
+	float: left;
+	//box-shadow: 5px 5px 5px 5px;
+//border-radius: 2em;
+}
+.tool_right {
+  width:  30%;
+  height: auto;
+  background: rgba(216,38,38,0.4);
+  //margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  display: inline-block;
+	float: left;
+	//box-shadow: 5px 5px 5px 5px;
+//border-radius: 2em;
+}
+.intro {
+background: rgba(34,119,176,0.7);
+padding: 1em;
+margin-right: 3em;
+border-radius: 1em;
+//border: 1px solid white;
+}
 .image {
 margin: auto;
 width: 50px;

@@ -12,8 +12,7 @@ theme:
 
   # Header and footer text
   header_text: >
-   <h1>InFoLiS - Integrating Research Data and Literature in Social Sciences</h1>
-   
+   <h1>linking research data and literature</h1>
   header_text_feature_image: img/back.png
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
