@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>InFoLiS</title>
+    <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>http://example.com/</link>
+    <description>A website with blog posts and pages</description>
+    <pubDate>Thu, 12 Nov 2015 14:42:00 +0100</pubDate>
+    
+      <item>
+        <title>Talk at Oberwolfach</title>
+        <link>http://example.com/infolis/conference/slides/2015/10/29/folien-oberwolfach.html</link>
+        <guid isPermaLink="true">http://example.com/infolis/conference/slides/2015/10/29/folien-oberwolfach.html</guid>
+        <description>&lt;p&gt;At the meeting of the libraries from Baden-Württemberg in Oberwolfach I presented also our project in the broader context of data citations. Here are &lt;a href=&quot;https://speakerdeck.com/zuphilip/datenzitationen-theorie-praxis-und-perspektiven&quot;&gt;the slides in German&lt;/a&gt;:&lt;/p&gt;
+
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;a04a5e4efd4b47ed96ac370f0b2ed346&quot; data-ratio=&quot;1.33333333333333&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Thu, 29 Oct 2015 09:00:01 +0100</pubDate>
+      </item>
+    
+      <item>
+        <title>InFoLiS presentation at ELAG 2015 now online</title>
+        <link>http://example.com/infolis/conference/2015/10/07/video-from-elag-online.html</link>
+        <guid isPermaLink="true">http://example.com/infolis/conference/2015/10/07/video-from-elag-online.html</guid>
+        <description>&lt;p&gt;A video of &lt;a href=&quot;http://elag2015.org/program/infolis-2-making-data-citations-a-reality/&quot;&gt;our talk on InFoLiS&lt;/a&gt; at this year’s &lt;a href=&quot;http://elag2015.org/&quot;&gt;ELAG conference&lt;/a&gt; in Stockholm, Sweden is now online at &lt;a href=&quot;https://www.youtube.com/&quot;&gt;YouTube&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=6EfKpYiHpRE&quot;&gt;ELAG 2015 InFoLiS 2 – Making data citations a reality&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/6EfKpYiHpRE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://elag2015.org/wp-content/uploads/2015/01/LOGO-elag2015_360x90.png&quot; alt=&quot;elag2015&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 07 Oct 2015 16:00:00 +0200</pubDate>
+      </item>
+    
+      <item>
+        <title>InFoLiS II - State of the Code</title>
+        <link>http://example.com/infolis/code/2015/06/23/infolis-2-state-of-the-code.html</link>
+        <guid isPermaLink="true">http://example.com/infolis/code/2015/06/23/infolis-2-state-of-the-code.html</guid>
+        <description>&lt;p&gt;It has been a busy six months of coding in the second funding phase of the InFoLiS project!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/bolandka&quot;&gt;bolandka&lt;/a&gt;, &lt;a href=&quot;https://github.com/Dommii&quot;&gt;dommii&lt;/a&gt; 
+and &lt;a href=&quot;http://github.com/kba&quot;&gt;kba&lt;/a&gt; have refactored the InfoLink code base from
+its &lt;a href=&quot;https://github.com/infolis/infoLink/tree/bfee929d8416a81b7c2862a220ac9dca1463d1bf&quot;&gt;state at the end of the original InFoLiS project&lt;/a&gt;
+into a &lt;a href=&quot;https://github.com/infolis/infoLink/tree/0a8eea2b7a58322e6fb72ef0857e2ac1d7d12d0d&quot;&gt;state&lt;/a&gt;
+where the internal dependencies are vastly reduced by using
+&lt;a href=&quot;https://github.com/infolis/infoLink/blob/master/src/main/java/io/github/infolis/algorithm/Algorithm.java&quot;&gt;common&lt;/a&gt; 
+&lt;a href=&quot;https://github.com/infolis/infoLink/blob/master/src/main/java/io/github/infolis/algorithm/Execution.java&quot;&gt;interfaces&lt;/a&gt;,
+unit tests &lt;a href=&quot;https://github.com/infolis/infoLink/tree/master/src/test/java&quot;&gt;are in place&lt;/a&gt; and there simple mechanisms
+for interacting with the system &lt;a href=&quot;https://github.com/infolis/infoLink/tree/master/src/main/java/io/github/infolis/ws/server&quot;&gt;via HTTP&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To make this system accessible for external software agents using a public API, we decided
+early on to use a NodeJS+MongoDB+CoffeeScript stack and
+implemented it
+&lt;a href=&quot;https://www.npmjs.com/package/infolis-web&quot;&gt;by&lt;/a&gt;
+&lt;a href=&quot;https://www.npmjs.com/package/mongoose-jsonld&quot;&gt;creating&lt;/a&gt;
+&lt;a href=&quot;https://www.npmjs.com/package/express-jsonld&quot;&gt;various&lt;/a&gt;
+&lt;a href=&quot;https://www.npmjs.com/package/jsonld-rapper&quot;&gt;Open&lt;/a&gt;
+&lt;a href=&quot;https://www.npmjs.com/package/jsonld-common-contexts&quot;&gt;Source&lt;/a&gt;
+&lt;a href=&quot;https://www.npmjs.com/package/tson&quot;&gt;NPM&lt;/a&gt;
+&lt;a href=&quot;https://www.npmjs.com/package/infolis-schema&quot;&gt;modules&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Our public API &lt;a href=&quot;http://infolis.gesis.org/infolink/&quot;&gt;has been online&lt;/a&gt; for some time but while we
+whole-heartedly encourage you to try it out, there is a sore lack of API documentation and
+extensive testing right now. If you are curious, though, feel free to check out our &lt;a href=&quot;http://infolis.gesis.org/infolink/schema/&quot;&gt;JSON-LD schema&lt;/a&gt;
+(supports content negotiation) or the &lt;a href=&quot;http://infolis.gesis.org/infolink/elag-demo.html&quot;&gt;HTML Demo&lt;/a&gt; that we created 
+for our &lt;a href=&quot;http://infolis.github.io/infolis/conference/slides/2015/06/10/slides-elag2015.html&quot;&gt;presentation at ELAG 2015&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;At the pace InFoLiS is moving forward at the moment, we’re confident that we will accomplish a lot over the course
+of 2015 and that we’ll soon be able officially open up our API for your data.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 23 Jun 2015 13:05:00 +0200</pubDate>
+      </item>
+    
+      <item>
+        <title>InFoLiS in one Picture</title>
+        <link>http://example.com/infolis/reference/twitter/2015/06/11/picture-twitter-elag2015.html</link>
+        <guid isPermaLink="true">http://example.com/infolis/reference/twitter/2015/06/11/picture-twitter-elag2015.html</guid>
+        <description>&lt;p&gt;&lt;a href=&quot;https://twitter.com/hochstenbach/status/608666052956925952&quot;&gt;Patrick Hochstenbach tweeted&lt;/a&gt; the following picture, which summarize
+&lt;a href=&quot;http://infolis.github.io/infolis/conference/slides/2015/06/10/slides-elag2015.html&quot;&gt;our talk InFoLiS 2 — Making data citations a reality&lt;/a&gt;
+at the &lt;a href=&quot;http://elag2015.org/program/infolis-2-making-data-citations-a-reality/&quot;&gt;2015 ELAG conference in Stockholm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/CHJqidXUwAIuDSF.jpg&quot; alt=&quot;infolis-picture-twitter&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thank you very much for the nice picture!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 11 Jun 2015 08:59:00 +0200</pubDate>
+      </item>
+    
+      <item>
+        <title>Slides from our presentation at ELAG 2015</title>
+        <link>http://example.com/infolis/conference/slides/2015/06/11/slides-elag2015.html</link>
+        <guid isPermaLink="true">http://example.com/infolis/conference/slides/2015/06/11/slides-elag2015.html</guid>
+        <description>&lt;p&gt;The slides for our presentation &lt;a href=&quot;http://elag2015.org/program/infolis-2-making-data-citations-a-reality/&quot;&gt;InFoLiS 2 — Making data citations a reality&lt;/a&gt;
+at the &lt;a href=&quot;http://elag2015.org&quot;&gt;2015 ELAG conference in Stockholm&lt;/a&gt; are available &lt;a href=&quot;http://www.slideshare.net/kbaierer/infolis-ii-elag2015&quot;&gt;on Slideshare&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/m4uZvRIK1E4qV7&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px;
+margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+</description>
+        <pubDate>Thu, 11 Jun 2015 00:45:00 +0200</pubDate>
+      </item>
+    
+      <item>
+        <title>Slides from our talk at CNI meeting</title>
+        <link>http://example.com/infolis/conference/slides/2015/04/14/slides-cni-talk.html</link>
+        <guid isPermaLink="true">http://example.com/infolis/conference/slides/2015/04/14/slides-cni-talk.html</guid>
+        <description>&lt;p&gt;Our slides from our talk at the &lt;a href=&quot;http://www.cni.org/events/membership-meetings/upcoming-meeting/spring-2015/&quot;&gt;CNI 2015 Spring Membership Meeting&lt;/a&gt; today can be found &lt;a href=&quot;http://de.slideshare.net/PhilippZumstein/in-folis-cnimeeting20150414&quot;&gt;at slideshare&lt;/a&gt;:&lt;/p&gt;
+
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/47004010&quot; width=&quot;476&quot; height=&quot;400&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;1&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Thank you for all your interest and we would love to hear more &lt;a href=&quot;http://wiki.bib.uni-mannheim.de/limesurvey/index.php?sid=55594&amp;amp;lang=en&quot;&gt;feedback about the project&lt;/a&gt; from you.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Apr 2015 19:35:01 +0200</pubDate>
+      </item>
+    
+      <item>
+        <title>InFoLiS presentation at ELAG 2015</title>
+        <link>http://example.com/infolis/conference/2015/03/24/accepted-to-elag.html</link>
+        <guid isPermaLink="true">http://example.com/infolis/conference/2015/03/24/accepted-to-elag.html</guid>
+        <description>&lt;p&gt;We will give a presentation on InFoLiS in Stockholm, Sweden at this years &lt;a href=&quot;http://elag2015.org/&quot;&gt;ELAG conference&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://elag2015.org/wp-content/uploads/2015/01/LOGO-elag2015_360x90.png&quot; alt=&quot;elag2015&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this talk, we will present our infrastructure which enables a seamless integration into existing systems to re-use our generated links and services. Furthermore, we give an overview of the technical and semantical challenges arising when linking publications and research data, especially how to properly describe their connection.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://elag2015.org/program/infolis-2-making-data-citations-a-reality/&quot;&gt;Our talk&lt;/a&gt; will be on Wednesday, June 10 at 14.30 – 15.00. We hope to see you there!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 24 Mar 2015 09:55:00 +0100</pubDate>
+      </item>
+    
+      <item>
+        <title>CNI invites InFoLiS</title>
+        <link>http://example.com/infolis/conference/2015/03/22/accepted-to-cni.html</link>
+        <guid isPermaLink="true">http://example.com/infolis/conference/2015/03/22/accepted-to-cni.html</guid>
+        <description>&lt;p&gt;We are invited by the German Research Foundation (DFG) to present the InFoLiS project at the &lt;a href=&quot;http://www.cni.org/events/membership-meetings/upcoming-meeting/spring-2015/&quot;&gt;&lt;strong&gt;CNI 2015 Spring meeting&lt;/strong&gt;&lt;/a&gt; in &lt;strong&gt;Seattle&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&quot;http://www.cni.org/pbs/integration-of-research-literature-and-data-infolis/&quot;&gt;our talk&lt;/a&gt;, we will describe our methods for generating the links and give insight into the Linked Data infrastructure including the services we are currently building. Most importantly, we will detail how our solutions can be used by other institutions and invite all interested participants to discuss with us their ideas and thoughts on the requirements for these services to ensure broad interoperability with existing systems and infrastructures.&lt;/p&gt;
+
+&lt;p&gt;Our presentation will be on &lt;strong&gt;Tuesday, April 14, 2015; 9:00-10:00 AM&lt;/strong&gt; (Olympic). Hope to see you there!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 22 Mar 2015 16:55:00 +0100</pubDate>
+      </item>
+    
+      <item>
+        <title>Horizon Report mention InFoLiS</title>
+        <link>http://example.com/infolis/reference/2014/12/19/referenced-by-horizon-report.html</link>
+        <guid isPermaLink="true">http://example.com/infolis/reference/2014/12/19/referenced-by-horizon-report.html</guid>
+        <description>&lt;p&gt;The &lt;a href=&quot;http://www.nmc.org/publication/nmc-horizon-report-2014-library-edition/&quot;&gt;NMC Horizon Report 2014 - Library Edition&lt;/a&gt; identifies an “Increasing Focus on Research Data Management for Publications” as one of the fast trends in academic and research libraries. As an implication, “[v]isionary leadership for research data management models is also required to determine how to best incorporate data connections into library catalogs” (p. 7). In that paragraph &lt;a href=&quot;http://dcpapers.dublincore.org/pubs/article/view/3683/1906&quot;&gt;our paper at the DCMI 2013&lt;/a&gt; is mentioned, where we presented “our approach to integrate metadata of research data and links between research data and publications into library catalogues” (p. 39).&lt;/p&gt;
+</description>
+        <pubDate>Fri, 19 Dec 2014 15:38:03 +0100</pubDate>
+      </item>
+    
+      <item>
+        <title>Sample post</title>
+        <link>http://example.com/2014/11/30/sample-post.html</link>
+        <guid isPermaLink="true">http://example.com/2014/11/30/sample-post.html</guid>
+        <description>&lt;p&gt;Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+  &lt;li&gt;Donec a diam lectus&lt;/li&gt;
+  &lt;li&gt;Sed sit amet ipsum mauris&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.&lt;/p&gt;
+
+&lt;p&gt;Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula &lt;em&gt;semper consectetur sagittis&lt;/em&gt;, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum.&lt;/p&gt;
+
+&lt;p&gt;Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt.&lt;/p&gt;
+
+&lt;p&gt;Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci. Mauris ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 30 Nov 2014 00:00:00 +0100</pubDate>
+      </item>
+    
+      <item>
+        <title>Feature images</title>
+        <link>http://example.com/2014/11/29/feature-images.html</link>
+        <guid isPermaLink="true">http://example.com/2014/11/29/feature-images.html</guid>
+        <description>&lt;p&gt;This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 29 Nov 2014 00:00:00 +0100</pubDate>
+      </item>
+    
+      <item>
+        <title>Markdown and HTML</title>
+        <link>http://example.com/2014/11/28/markdown-and-html.html</link>
+        <guid isPermaLink="true">http://example.com/2014/11/28/markdown-and-html.html</guid>
+        <description>&lt;p&gt;Jeykll supports the use of &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt; with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.&lt;/p&gt;
+
+&lt;p&gt;Tables have also been extended from Markdown:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First Header&lt;/th&gt;
+      &lt;th&gt;Second Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Here’s an example of an image, which is included using Markdown:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/sample_feature_img_2.png&quot; alt=&quot;Geometric pattern with fading gradient&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Highlighting for code in Jekyll is done using Pygments or Rouge. This theme makes use of Pygments by default.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// count to ten&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// count to twenty&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Type Theme uses KaTeX to display maths. Equations such as &lt;script type=&quot;math/tex&quot;&gt;S_n = a \times \frac{1-r^n}{1-r}&lt;/script&gt; can be displayed inline.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, they can be shown on a new line:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x) = \int \frac{2x^2+4x+6}{x-2}&lt;/script&gt;
+</description>
+        <pubDate>Fri, 28 Nov 2014 00:00:00 +0100</pubDate>
+      </item>
+    
+  </channel>
+</rss>
